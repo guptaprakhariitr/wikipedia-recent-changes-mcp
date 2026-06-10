@@ -1,0 +1,29 @@
+name = "wikipedia-recent-changes-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "a7d8a0d55f614971b9f1219daef6655a"
+
+[[kv_namespaces]]
+binding = "USAGE"
+id = "0aa5fbf7d8464949bbe2fb1ec7794fa7"
+
+[vars]
+UPGRADE_URL = "https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev/upgrade"
+WIKIPEDIA_REST = "https://en.wikipedia.org/api/rest_v1"
+WIKIPEDIA_ACTION = "https://en.wikipedia.org/w/api.php"
+WIKIDATA_BASE = "https://www.wikidata.org/w/api.php"
+USER_AGENT = "wikipedia-recent-changes-mcp/0.1 (prakshatechnologies@gmail.com)"
+PRODUCT_NAME = "wikipedia-recent-changes-mcp"
+DODO_PRODUCT_ID_SOLO = "pdt_0NgkdXWSq57onaMwq3gOn"
+DODO_PRODUCT_ID_TEAM = "pdt_0NgkdXbXs1dJw7wWmdrP1"
+DODO_PRODUCT_ID_PRO  = "pdt_0NgkdXeahrukT2TRiidYR"
+FROM_EMAIL = "prakshatechnologies@gmail.com"
+DODO_BASE = "https://live.dodopayments.com"
+CUSTOMER_PORTAL_RETURN_URL = "https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev/account"

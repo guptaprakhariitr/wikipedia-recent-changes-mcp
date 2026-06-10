@@ -1,0 +1,21 @@
+{
+  "$schema": "https://smithery.ai/schema/server.json",
+  "name": "wikipedia-recent-changes-mcp",
+  "displayName": "Wikipedia Recent Changes + Wikidata",
+  "description": "Live Wikipedia edit-feed for AI agents — every breaking news event lands here within minutes. Plus page summaries, trending, Wikidata entity lookup.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev",
+  "repository": "https://github.com/guptaprakhariitr/wikipedia-recent-changes-mcp",
+  "categories": ["news", "research", "knowledge-graph"],
+  "tags": ["wikipedia", "wikidata", "knowledge-graph", "trending", "news-monitoring"],
+  "transport": { "type": "http", "url": "https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev/mcp" },
+  "auth": { "type": "bearer", "freeTier": { "monthlyCalls": 200, "ratePerMinute": 20 } },
+  "tools": ["wiki_recent_changes", "wiki_page_summary", "wiki_trending", "wikidata_search"],
+  "pricing": { "currency": "USD", "tiers": [
+    { "name": "Free", "price": 0,  "monthlyCalls": 200 },
+    { "name": "Solo", "price": 9,  "monthlyCalls": 3000 },
+    { "name": "Team", "price": 29, "monthlyCalls": 15000 },
+    { "name": "Pro",  "price": 79, "monthlyCalls": 75000 }
+  ] }
+}
