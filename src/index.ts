@@ -71,7 +71,7 @@ const LLMS_TXT = `# wikipedia-recent-changes-mcp
 - wiki_trending(date?)
 - wikidata_search(query)
 
-Endpoint: https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev/mcp
+Endpoint: https://wikipedia-recent-changes-mcp.atlasword.workers.dev/mcp
 `;
 function renderLanding(env: Env, url: URL): string {
   const productName = env.PRODUCT_NAME ?? "wikipedia-recent-changes-mcp";
@@ -87,6 +87,6 @@ function renderLanding(env: Env, url: URL): string {
 <body><h1>${productName}</h1>
 <p>${tagline}</p>
 <p>Every breaking news event lands in Wikipedia edits within minutes — this is the firehose.</p>
-<p><code>POST https://wikipedia-recent-changes-mcp.prakhar-cognizance.workers.dev/mcp</code></p>
+<p><code>POST https://wikipedia-recent-changes-mcp.atlasword.workers.dev/mcp</code></p>
 </body></html>`;
 }
