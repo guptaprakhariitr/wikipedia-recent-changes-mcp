@@ -3,7 +3,7 @@
   "name": "io.github.guptaprakhariitr/wikipedia-recent-changes-mcp",
   "title": "Wikipedia Recent Changes",
   "description": "Live Wikipedia edit feed, page summaries, trending pages, and Wikidata search.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://wikipedia-recent-changes-mcp.atlasword.workers.dev/",
   "repository": {
     "url": "https://github.com/guptaprakhariitr/wikipedia-recent-changes-mcp",
@@ -13,6 +13,16 @@
     {
       "type": "streamable-http",
       "url": "https://wikipedia-recent-changes-mcp.atlasword.workers.dev/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@insnapsprakhar/wikipedia-recent-changes-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
