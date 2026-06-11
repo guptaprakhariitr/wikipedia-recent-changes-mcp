@@ -205,10 +205,10 @@ MIT — see [LICENSE](LICENSE).
 
 ## Install via npm (one-liner)
 
-A thin launcher is published as [`@atlasword/wikipedia-recent-changes-mcp`](https://www.npmjs.com/package/@atlasword/wikipedia-recent-changes-mcp) on npm. No manual URL to copy/paste:
+A thin launcher is published as [`@insnapsprakhar/wikipedia-recent-changes-mcp`](https://www.npmjs.com/package/@insnapsprakhar/wikipedia-recent-changes-mcp) on npm. No manual URL to copy/paste:
 
 ```bash
-npx -y @atlasword/wikipedia-recent-changes-mcp
+npx -y @insnapsprakhar/wikipedia-recent-changes-mcp
 ```
 
 Or wire it into your MCP client:
@@ -218,7 +218,7 @@ Or wire it into your MCP client:
   "mcpServers": {
     "wikipedia-recent-changes": {
       "command": "npx",
-      "args": ["-y", "@atlasword/wikipedia-recent-changes-mcp"]
+      "args": ["-y", "@insnapsprakhar/wikipedia-recent-changes-mcp"]
     }
   }
 }
